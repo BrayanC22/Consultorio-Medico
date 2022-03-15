@@ -1,0 +1,138 @@
+body{
+  background-color: #bebeff;
+opacity: 1;
+background-image: radial-gradient(circle at center center, #7777ff, #bebeff), repeating-radial-gradient(circle at center center, #7777ff, #7777ff, 40px, transparent 80px, transparent 40px);
+background-blend-mode: overlay;
+}
+
+/* ------------------------------------------------- ESPECIALIZACION --------------------------------------------*/
+li:nth-child(5){
+  background: #004C70;
+  border-top: solid 3px #0b080e;
+}
+
+.Sprincipal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9%;
+    background: #0b080e;
+    color: white;
+    text-align: center; 
+    padding-bottom: 5%;
+    padding-top: 5%;
+    
+}
+#imagenPrincipal{
+  border: 2px solid white;
+  border-radius: 50%
+}
+
+.Sprincipal .mensaje, .Sprincipal #imagenPrincipal{
+    width: 20%;
+}
+#Agendar{
+  text-align: center;
+  padding-left: 25%;
+}
+/* -------------------------------------------------- Secciones ----------------------------------------------------*/
+.Seccion{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.parrafo{
+  width: 60%;
+  padding: 2%;
+  text-align: justify;
+
+}
+
+.imagen{
+  width: 30%;
+  padding: 2%;
+  border-radius: 75px;
+}
+
+.titulo2{
+  width: 100%;
+  text-align: center;
+  padding: 2%;
+  border-bottom: 1px solid #7777ff;
+}
+.parrafo li{
+  line-height: 1.5em;
+  padding-bottom: 2% ;
+} 
+/*---------------------------------------------------- DOCTORES ----------------------------------------------------*/
+
+.SeccionDoctores{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6%;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.doctores{
+  width: 100%;
+  height: fit-content;
+  padding: 5%;
+}
+.doctores img{
+  width: 40%;
+  border-radius: 90%;
+  border: inset 5px;
+}
+.doctores a, .Sprincipal a{
+  
+  padding: 3%;
+  font-weight: bolder;
+  background: white;
+  color: #004C70;
+  border-radius: 16px;
+}
+.infoDoctores{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 26%;
+  margin-top: 2%;
+  background: #bbbbff;
+  border-radius: 25px;
+  color: black;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+.Sprincipal a{
+  display: flex;
+  flex-direction: row;
+  font-size: 75%;
+  margin-top: 5%;
+}
+/*---------------------------------------------------- VIDEOS ------------------------------------------------------*/
+.SeccionVideos{
+  background: #004C70;
+  color: white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.itemsV{
+  width: 40%;
+  padding-top: 2%;
+
+}

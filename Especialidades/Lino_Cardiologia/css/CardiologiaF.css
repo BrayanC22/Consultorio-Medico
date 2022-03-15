@@ -1,0 +1,74 @@
+        * {
+            margin: 0%;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding-top: 5%;
+            padding-inline: 15%;
+            padding-bottom: 5%;
+            font-size: 17px;
+        }
+
+        .contenedor .elemento img {
+            width: 80%;
+        }
+
+        .contenedor .elemento:nth-child(2) {
+            width: 41%;
+            background: #003752;
+            color: white;
+            font-weight: bolder;
+            padding: 5%;
+            border-radius: 15px;
+        }
+
+        .Acciones {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 2%;
+        }
+
+        .Acciones input {
+            width: 60%;
+            font-weight: bold;
+            color: #161e4a;
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+
+        input,
+        select,
+        textarea {
+            font-size: 24px;
+            font-family: century school book;
+            border-radius: 10px;
+            border-color: #003752;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 2%;
+        }
+
+        h2 {
+            text-align: center;
+            padding-bottom: 8%;
+        }
+
+        #Sub {
+            font-size: 1.5ch;
+            font-weight: normal;
+            padding-bottom: 8%;
+        }

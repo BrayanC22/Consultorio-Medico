@@ -1,0 +1,66 @@
+li:nth-child(6) {
+    background: #004C70;
+    border-top: solid 3px #0b080e;
+}
+
+.Seccion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .parrafo{
+    width: 40%;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: justify;
+  }
+  .parrafo:nth-child(2){
+    text-align: right;
+  }
+  .imagen{
+    width: 20%;
+    margin: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+    border-radius: 50%;
+    border: inset 10px rebeccapurple;
+  }
+  h3{
+    line-height: 2rem;
+    margin-top: 3%;
+  }
+
+  .titulo2{
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+    border-bottom: 1px solid #7777ff;
+    border-bottom: 1px solid #7777ff;
+    background: #0b080e;
+    color: white;
+  }
+
+  .Sprincipal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    background: #0b080e;
+    color: white;
+    text-align: center; 
+    
+    
+}
+
+.Sprincipal .mensaje{
+    width: 20%;
+    font-weight: bolder;
+}
+
+.Sprincipal img{
+    width: 31%;
+    padding-top: 2%;
+}

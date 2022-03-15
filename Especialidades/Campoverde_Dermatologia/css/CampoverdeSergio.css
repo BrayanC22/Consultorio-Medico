@@ -1,0 +1,251 @@
+li:nth-child(4) {
+  background: #004C70;
+  border-top: solid 3px #0b080e;
+}
+#galeria{
+  text-align: center;
+    padding-top: 2%;
+}
+    .inicio{
+      width: 100%;
+    background-image: linear-gradient(to top, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(Imagen/img1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+ .art{
+    padding: 30px;
+    width: 96%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    right: 0px
+ }
+ .contendor{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  padding: 20px 0; 
+  margin: auto;
+  overflow: auto;
+
+}
+
+  .videos{
+    justify-content: center;
+    display: flex;
+  }
+    #video{ 
+   padding: 40px;
+    width:460px;
+     height:215px; 
+        }
+   #video1{
+    padding: 40px;
+    width:460px; 
+    height:215px; 
+
+        }
+    .esp{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 25px;
+
+  }
+  .espe{
+    width: 200px;
+    height: 200px;
+    padding-right: 10px;
+    border-radius: 50%;
+    margin: 25px;
+  }
+ 
+  .form-title {
+  color: black;
+  font-weight: 500;
+  top: 30px;
+}
+#h2{
+  text-align: center;
+  padding-bottom: 3%;
+    padding-top: 3%;
+    background: #0b080e;
+    color: white;
+}
+#hh2{
+  text-align: center;
+ left: 100px;
+ padding-top: 3%;
+    padding-bottom: 2%;
+}
+#hhh2{
+  text-align: center;
+  padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.especialistas{
+  justify-content: center;
+  display: flex;
+  border-radius: 40px;
+
+}
+p{
+  text-align: justify;
+  
+}
+
+.dermatologia {
+  position: fixed;  
+  top: 30px;
+  right: 30px;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.contenido-header>img {
+    width: 550px;
+    animation: ease-in animat 1s;
+}
+@keyframes animat {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.menu_navegacion{
+  position: fixed;
+  top: 0;
+ width: 30vw;
+ height: 100%;
+  
+ background-image: linear-gradient(
+  88deg
+  , #004c70 0%, #191121 100%);
+  display: flex;
+  right: 0;
+  transform: translateX(110%);
+  transition:transform 0.3s ease-in-out;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+  flex-direction: column;
+}
+.spread{
+    transform: translateX(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
+@media screen and (max-width: 800px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+    }
+
+    @media screen and (max-width: 500px){
+    .menu-navegacion{
+        width: 65vw;
+    }
+
+    .dermatologia{
+        top: 20px;
+        right: 20px;
+    }
+
+    .subtitulo{
+    font-size: 30px;font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+    }
+   }
+   .item {
+    border: 1px solid #cccccc;
+     margin-top:9px;
+     color: white;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+   }
+ .item:hover{ 
+  background: rgb(1, 38, 67);
+ }
+.casos{
+  display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.casos img{
+    width: 15%;
+}
+
+.checklist-casos{
+    width: 60%;
+}
+.service{
+    margin-bottom: 20px;
+}
+.contenedor_galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.img-galeria{
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    cursor: pointer;
+}
+.imagen-light{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.534);
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+.agregar-imagen{
+    width: 60%;
+    transform: scale(0);
+    border-radius: 10px;
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.show{
+    transform: translate(0);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+.Imageness{
+  background: #f2f2f2;
+}
+  
