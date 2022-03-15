@@ -15,7 +15,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
   <link rel="stylesheet" href="../../assets/css/General.css" />
   <link rel="icon" href="../../assets/img/medical-icon.ico">
-  <script src="../../assets/Validaciones/ValidFNutricion.js"> </script>
+  
 
 
     <style>
@@ -153,7 +153,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             var txtemail = document.getElementById("correo");
             var txtTelefono = document.getElementById("telefono");
             var selectTiempo = document.getElementById("tiempo");
-            var selectProducto = document.getElementById("productos");
+            var selectProducto = document.getElementById("id_productocurso");
 
 
             var letra = /^[a-z ,.'-]+$/i;
@@ -224,7 +224,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             var nodoPadre = elemento.parentNode;
             var nodoMensaje = document.createElement("span");
             nodoMensaje.innerHTML = cadenaMensaje;
-            nodoMensaje.style.color = "red";
+            nodoMensaje.style.color = "white";
             nodoMensaje.display = "block";
             nodoMensaje.setAttribute("class", "mensaje");
 
@@ -298,6 +298,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                                     <option value="9 meses">9 meses</option>
                                     <option value="1 año">1 año</option>
                                 </select>
+                                <br>
                                 
                             </div>
 
@@ -313,6 +314,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                        }
                         ?>
                         </select>
+                        <br>
                         <div class="col-md-12">
                     <button type="submit" class="btn btn-primary" onclick="if (!confirm('Esta seguro de modificar el curso')) return false;" >Guardar</button>
                     <a href="../../index.php?c=cursos&f=index" class="btnconsultar">Consultar cursos</a>

@@ -16,11 +16,12 @@
             text-align: left;
             border-collapse: collapse;
             width: 100%;
+            font-size:20px;
 
         }
 
         td {
-            font-size: 14px;
+            font-size: 15px;
         }
 
         td,
@@ -62,16 +63,7 @@
             background: #EBEDEF;
         }
 
-        .Header2 {
-            display: inline;
-            font-size: 16px;
-            background: white;
-            color: black;
-            font-family: Century Schoolbook;
-            text-align: center;
-            line-height: 80px;
-        }
-
+    
 
         .elemento {
             display: inline-block;
@@ -204,7 +196,11 @@
         #BusquedaPanel{
             text-align: center;
         }
-
+       .btn-editar{
+        padding: 3%;
+        color:black;
+        
+        }
 
     </style>
 
@@ -266,8 +262,8 @@
                             <td><?php echo $fila['produc_nombre'] ?></td>
                             <td>
 
-                            <td><a class="btn btn-primary" id="btn-editar" href="../../index.php?c=cursos&f=editar&id_cursos=<?php echo  $fila['id_cursos']; ?>"> Editar<i class="fas fa-marker"></i></a>
-                                <a class="btn btn-danger" onclick="if(!confirm('Esta seguro de eliminar el curso?'))return false;" href="../../index.php?c=cursos&f=eliminar&id_cursos=<?php echo  $fila['id_cursos']; ?>">Eliminar<i class="fas fa-trash-alt"></i></a>
+                            <td><a class=" btn-editar" id="btn-editar" href="../../index.php?c=cursos&f=editar&id_cursos=<?php echo  $fila['id_cursos']; ?>"> Editar<i class="fas fa-marker"></i></a>
+                                <a class=" btn-editar" onclick="if(!confirm('Esta seguro de eliminar el curso?'))return false;" href="../../index.php?c=cursos&f=eliminar&id_cursos=<?php echo  $fila['id_cursos']; ?>">Eliminar<i class="fas fa-trash-alt"></i></a>
                             </td>
                              
                         </tr>

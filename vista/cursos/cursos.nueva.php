@@ -286,7 +286,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                                     <option value="6 meses">6 meses</option>
                                     <option value="9 meses">9 meses</option>
                                     <option value="1 año">1 año</option>
+                                    
                                 </select>
+                                <br>
                             </div>
 
                             <div class="col-md-12">
@@ -299,6 +301,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                   }
                   ?>
                           </select>
+                          <br>
                             </div>
                          
                             <!--Botones-->
@@ -310,7 +313,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                            
                 <div>
                   <a href="../../index.php?c=cursos&f=index">
-                    <button type="button" class="btn btn-primary" id="butonbuscar"><i class="fas fa-plus"></i>Consltar cursos </button>
+                    <button type="button" class="btn btn-primary" id="butonbuscar"><i class="fas fa-plus"></i>Consultar cursos </button>
                   </a>
 
                 </div>
