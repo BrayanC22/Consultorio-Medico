@@ -11,7 +11,7 @@ class FrontControlador {
          
         $funcion = (!empty($_REQUEST['f']))?htmlentities($_REQUEST['f']):FUNCION_PRINCIPAL;
 
-        require_once 'controlador/CitasContralador.php' ;
+        require_once 'controlador/' . $controlador . '.php';
         $cont = new $controlador();
         $cont->$funcion();
     }
