@@ -19,7 +19,13 @@ public function index(){
 
 public function buscar(){
     $busqueda = $_POST["busqueda"];
-    $resultados = $this->modelo->buscar($busqueda);
+    if (empty($_POST['busqueda'])){
+        //comunica con el modelo
+        $resultados = $this->modelo->listar();
+        }else{
+            
+            $resultados = $this->modelo->buscar($busqueda);
+        }
     require_once 'vista/especialistas/especialistas.presentar.php';
 }
 

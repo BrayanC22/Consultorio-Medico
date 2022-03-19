@@ -111,8 +111,8 @@
 
         <div class="col-md-12" id="BusquedaPanel">
             <form action="../../index.php?c=Consulta&f=buscar" method="POST">
-                <input type="text" name="busqueda" id="busqueda" class="formItem" placeholder="Ingrese el id de su consulta" />
-                <button type="submit" class="buscarboton"><i class="fas fa-search"></i>Buscar por id</button><br>
+                <input type="text" name="busqueda" id="busqueda" class="formItem" placeholder="Nombre de usuario" />
+                <button type="submit" class="buscarboton">Buscar por Usuario</button><br>
             </form>
         </div>
 

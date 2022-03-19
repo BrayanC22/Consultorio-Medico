@@ -164,8 +164,7 @@ class ConsultaModelo
 
     public function buscar($parametro)
     {
-        $sql = "SELECT id_consulta, NombreUsuario, email, celular,Asunto, Descripcion, Subscripcion from consultas where id_consulta=$parametro";
-      
+        $sql = "SELECT id_consulta, NombreUsuario, email, celular,Asunto, Descripcion, Subscripcion from consultas where NombreUsuario = '$parametro'";
         $sentencia = $this->con->prepare($sql);
         $sentencia->execute();
         $resultados = $sentencia->fetchAll(PDO::FETCH_ASSOC);
