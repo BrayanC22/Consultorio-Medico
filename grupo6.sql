@@ -120,8 +120,8 @@ CREATE TABLE `Consultas` (
   `Subscripcion` varchar(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE `registrarEspecialista` (
-  `idCurso` int(11) NOT NULL,
+CREATE TABLE `especialistas` (
+  `idEspecialista` int(11) NOT NULL,
   `tipoDocumento` varchar(15) NOT NULL,
   `numDocumento` varchar(10) NOT NULL,
   `nombre_completo` varchar(60) NOT NULL,
@@ -130,10 +130,8 @@ CREATE TABLE `registrarEspecialista` (
   `correo` varchar(50) NOT NULL,
   `grado_preparacion` varchar(35) NOT NULL,
   `especialidad` varchar(45) NOT NULL,
-  `experiencia` int(100) NOT NULL,
-  `fechaInicio` date NOT NULL,
-  `Curso` varchar(45) NOT NULL,
-  `nomDocente` varchar(60) NOT NULL
+   `experiencia` int NOT NULL,
+  `estado` int not null
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -143,8 +141,8 @@ CREATE TABLE `registrarEspecialista` (
 --
 -- Indices de la tabla `cursodisponible`
 --
-ALTER TABLE `registrarEspecialista`
-  ADD PRIMARY KEY (`idCurso`);
+ALTER TABLE `especialistas`
+  ADD PRIMARY KEY (`idEspecialista`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -153,10 +151,16 @@ ALTER TABLE `registrarEspecialista`
 --
 -- AUTO_INCREMENT de la tabla `cursodisponible`
 --
-ALTER TABLE `registrarEspecialista`
-  MODIFY `idCurso` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `especialistas`
+  MODIFY `idEspecialista` int(11) NOT NULL AUTO_INCREMENT;
 
-INSERT INTO `registrarEspecialista` (`idCurso`, `tipoDocumento`, `numDocumento`, `nombre_completo`, `sexo`, `telefono`, `correo`, `grado_preparacion`, `especialidad`, `experiencia`, `fechaInicio`, `Curso`, `nomDocente`) VALUES
-(1, 'cedula', '1199283928', 'Klever Vallejo', 'Masculino', '0988377361', 'klever@gmail.com', 'postgrado', 'ninguna', 2, '2022-02-27', 'Cardiologia', 'Dr. Hector Gonzales'),
-(2, 'pasaporte', '0928822123', 'Karla Alvarez', 'Femenino', '0983724598', 'karla@gmail.com', 'postgrado', 'Cirugia general', 4, '2022-02-28', 'Nutricion y dietetica', 'Dr. Angel Velasquez');
+INSERT INTO `especialistas` (`idEspecialista`, `tipoDocumento`, `numDocumento`, `nombre_completo`, `sexo`, `telefono`, `correo`, `grado_preparacion`, `especialidad`, `experiencia`,  `estado` ) VALUES
+(1, 'cedula', '1199283928', 'Klever Vallejo', 'Masculino', '0988377361', 'klever@gmail.com', 'postgrado', 'Dermatologia', 2, 1),
+(2, 'pasaporte', '0928822123', 'Karla Alvarez', 'Femenino', '0983724598', 'karla@gmail.com', 'postgrado', 'Cirugia general', 4, 1),
+(3, 'Cedula', '0288282231', 'Kevin ', 'Masculino', '0982762213', 'KEVIN@GMAIL.COM', 'Pregrado', 'Medicina general', 2, 1),
+(4, 'Pasaporte', '1233333333', 'Maria Cruz', 'Femenino', '0994847434', 'maria@gmail.com', 'Postgrado', 'Dermatologia', 4, 1),
+(5, 'Cedula', '0990135535', 'Ricardo Pereza', 'Masculino', '0998745632', 'pepe@gmail.com', 'Pregrado', 'Cirug&iacute;a general', 2, 1),
+(6, 'Pasaporte', 'numDocumen', 'nombre_completo', 'Masculino', '1234567890', 'memo@example.com', 'Pregrado', 'Medicina general', 2, 1),
+(7, 'Cedula', 'numDocumen', 'nombre_completo', 'Femenino', '8585858520', 'editado@correo.com', 'Postgrado', 'Cirugia', 4, 1),
+(8, 'Pasaporte', '0939388322', 'Maia Delgado', 'Femenino', '0922222354', 'mariag@gmail.com', 'Pregrado', 'Cardiologia', 2, 1);
 
