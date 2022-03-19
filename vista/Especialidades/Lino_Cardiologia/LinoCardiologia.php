@@ -58,11 +58,11 @@ onload = function () {
             <div class = "Sprincipal">
                     <h2 class="mensaje"><strong>CARDIOLOGÍA</strong></h2>
                     <img id="imagenPrincipal" src="assets/img/Cardiologia/Rotacion/img1.png" alt="Imagen Principal" title="Cardiología">
-                    <h2 class="mensaje"><strong>CON NOSOTROS TU CORAZÓN ESTÁ SEGURO</strong><a id="Agendar" href="../../index.php?c=Consulta&f=nuevo">AGENDAR CITA</a></h2>     
+                    <h2 class="mensaje"><strong>CON NOSOTROS TU CORAZÓN ESTÁ SEGURO</strong><a id="Agendar" href="../../index.php?c=Consulta&f=nuevo">CONSULTAS</a></h2>     
             </div>
 
             <div>
-                    Fecha de publicación: <time datetime="2021">Diciembre</time>
+                    Fecha de publicación: <time datetime="2022">Marzo</time>
 
             </div>
 
