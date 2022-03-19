@@ -8,7 +8,7 @@
   <meta name="description" content="Ejemplo de HTML5">
   <meta name="Keywords" content="HTML5,CSS3,JavaScript">
   <link rel="stylesheet" href="../../assets/css/General.css" />
-  <link rel="icon" href="../../assets/img/medical-icon.ico">
+  <link rel="icon" href="assets/img/medical-icon.ico">
   <script src="../../assets/Validaciones/ValidFNutricion.js"> </script>
 
   <style>
@@ -138,9 +138,9 @@
 
   <script>
     var imagenes = new Array(
-      ['../../Especialidades/Calvopina_Nutricion/img/nutriciodietetica12.jpg'],
-      ['../../Especialidades/Calvopina_Nutricion/img/nutriciodietetica14.jpg'],
-      ['../../Especialidades/Calvopina_Nutricion/img/nutriciodietetica13.jpg'],
+      ['Assets/img/Nutricion/nutriciodietetica12.jpg'],
+      ['Assets/img/Nutricion/nutriciodietetica14.jpg'],
+      ['Assets/img/Nutricion/nutriciodietetica13.jpg'],
 
     );
     var contador = 0;
@@ -158,19 +158,7 @@
 
 <body>
 <div id="contendor">
-        <header class="Encabezado">
-            <h1 class="Contenido"> <img src="../../assets/img/Logo.png" alt="" />CONSULTORIO MEDICO</h1>
-            <nav class="Contenido">
-                <ul class="menu">
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../../Especialidades/Quisnancela_Cirugia/QuisnancelaCirugia.html">Cirugía General</a></li>
-                    <li><a href="../../Especialidades/Calvopina_Nutricion/BrayanNutricion.html">Nutrición y Dietética</a></li>
-                    <li><a href="../../Especialidades/Campoverde_Dermatologia/CampoverdeDermatologia.html">Dermatología</a></li>
-                    <li><a href="../../Especialidades/Lino_Cardiologia/LinoCardiologia.html">Cardiología</a></li>
-                    <li><a href="../../acercaNosotros.html">Acerca de</a></li>
-                </ul>
-            </nav>
-      </header>
+<?php  require_once 'vista/Templates/encabezado.php'; ?>
     <br>
     <header class="Header2">
       <h2><strong>FORMULARIO DE REGISTRO PARA SEPARAR UNA CITA</strong></h2>
@@ -260,28 +248,7 @@
         <img src="../../Especialidades/Calvopina_Nutricion/img/nutriciodietetica14.jpg" alt="" id="imagen" height="420" width="440">
       </div>
       
-      <footer id="Footer1">
-            <strong>Autor:</strong> Grupo 6.
-            <br>
-            <strong>Visitanos:</strong> Guayaquil-Ecuador.
-            <br>
-            <br>
-            <strong>Medicina General</strong>
-            <br>
-            <br>
-            <div id="Foot">
-                <div>
-                    <h4 id="acercaDe"><strong>Contactanos a nuestras Redes sociales</strong></h4>
-                </div>
-                <br>
-                <a href="https://twitter.com/?lang=es" target="_BLANK"> <img src="../../assets/img/twitter.png" alt="descripcion" height="50" width="50" /></a>
-                <a href="https://www.instagram.com/accounts/login/" target="_BLANK"> <img src="../../assets/img/instagram.png" alt="descripcion" height="50" width="50" /></a>
-                <a href="https://www.facebook.com/" target="_BLANK"> <img src="../../assets/img/facebook.png" alt="descripcion" height="50" width="50" /></a>
-                <br>
-
-                <h4> Derechos reservados &copy; 2020-2021</h4>
-            </div>
-        </footer>
+      <?php  require_once 'vista/Templates/piePagina.php'; ?>
     </div>
 </body>
 

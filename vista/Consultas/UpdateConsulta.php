@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <link rel="stylesheet" href="assets/css/Cardiologia.css">
+<link rel="icon" href="assets/img/medical-icon.ico">
 <link rel="stylesheet" href="assets/css/CardiologiaF.css">
 <title>UPDATE CONSULTA</title>
 

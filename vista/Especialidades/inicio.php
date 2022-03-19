@@ -185,19 +185,19 @@ text-align: center;
                 <h2>NUESTROS SERVICIOS</h2>
             </div>
             <div class="elemento col-md-6">
-                    <a href="Especialidades/Quisnancela_Cirugia/QuisnancelaCirugia.php" target="_BLANK"><h5>CIRUGÍA GENERAL</h5><img id="imagen1" onmouseover="aumentarImagen('imagen1')" onmouseleave="reducirImagen('imagen1')" height="300" width="600" src="../../assets/img/cirugiaGeneral.jpg" alt=""/></a>            
+                    <a href="index.php?c=inicio&f=cirugia" target="_BLANK"><h5>CIRUGÍA GENERAL</h5><img id="imagen1" onmouseover="aumentarImagen('imagen1')" onmouseleave="reducirImagen('imagen1')" height="300" width="600" src="../../assets/img/cirugiaGeneral.jpg" alt=""/></a>            
             </div>
             <div class="elemento col-md-6">   
-                    <a href="Especialidades/Calvopina_Nutricion/BrayanNutricion.php" target="_BLANK"><h5>NUTRICIÓN Y DIETETICA</h5><img id="imagen2" onmouseover="aumentarImagen('imagen2')" onmouseleave="reducirImagen('imagen2')" height="300" width="600" src="../../assets/img/nutrición.jpg" alt="" /></a>
+                    <a href="index.php?c=inicio&f=nutricion" target="_BLANK"><h5>NUTRICIÓN Y DIETETICA</h5><img id="imagen2" onmouseover="aumentarImagen('imagen2')" onmouseleave="reducirImagen('imagen2')" height="300" width="600" src="../../assets/img/nutrición.jpg" alt="" /></a>
                     
                 
             </div>
             <div class="elemento col-md-6">
-                    <a href="Especialidades/Campoverde_Dermatologia/CampoverdeDermatologia.php" target="_BLANK"><h5>DERMATOLOGÍA</h5><img id="imagen3" onmouseover="aumentarImagen('imagen3')" onmouseleave="reducirImagen('imagen3')" height="300" width="600" src="../../assets/img/dermatología.jpg" alt=""/></a>
+                    <a href="index.php?c=inicio&f=dermatologia" target="_BLANK"><h5>DERMATOLOGÍA</h5><img id="imagen3" onmouseover="aumentarImagen('imagen3')" onmouseleave="reducirImagen('imagen3')" height="300" width="600" src="../../assets/img/dermatología.jpg" alt=""/></a>
                 
             </div>
             <div class="elemento col-md-6">
-                    <a href="Especialidades/Lino_Cardiologia/LinoCardiologia.php" target="_BLANK"><h5>CARDIOLOGÍA</h5><img id="imagen4" height="300" onmouseover="aumentarImagen('imagen4')" onmouseleave="reducirImagen('imagen4')" width="600" src="../../assets/img/Cardiología.jpg" alt="" /></a>
+                    <a href="index.php?c=inicio&f=cardiologia" target="_BLANK"><h5>CARDIOLOGÍA</h5><img id="imagen4" height="300" onmouseover="aumentarImagen('imagen4')" onmouseleave="reducirImagen('imagen4')" width="600" src="../../assets/img/Cardiología.jpg" alt="" /></a>
             </div>
         </div>
     </div>

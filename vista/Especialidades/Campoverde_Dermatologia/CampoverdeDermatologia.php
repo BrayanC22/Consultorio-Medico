@@ -14,11 +14,11 @@
 <?php  require_once 'vista/Templates/encabezado.php'; ?>
     
          <div class ="body"></div>
-        <img class="dermatologia" src="Imagen/hamburguesa.svg" alt="">
+        <img class="dermatologia" src="assets/img/Dermatologia/hamburguesa.svg" alt="">
 
         <nav class ="menu_navegacion">
           <a class = "item" href="#imagenP">Menu</a>  
-          <a  class = "item" href="Crud_dematologia/Registrar.php">Inscrpción en cursos.</a>
+          <a  class = "item" href="../../../index.php?c=especialistas&f=presentar">Registro de especialistas.</a>
           <a  class = "item" href="#galeria">Galeria</a>
            <a  class = "item" href="#video">Videos</a>
             <a  class = "item" href="#hhh2">Especialistas</a>
@@ -30,7 +30,7 @@
            
            <h2 id = "h2">DERMATOLOGÍA</h2>
         
-         <img class = "inicio" src="./Imagen/img1.jpg" alt="Dermatología">
+         <img class = "inicio" src="assets/img/Dermatologia/img1.jpg" alt="Dermatología">
         
          <div class = "art">
          <p>La dermatología es una especialidad de la medicina que se ocupa del nocimiento y estudio
@@ -41,7 +41,7 @@
           <p>Como ejemplos de algunas áreas de estudio y dedicación de la especialidad podemos destacar.</p>
           <div class = "art">
           <div class="casos">
-            <img src="Imagen/img5.jpg" alt="">
+            <img src="assets/img/Dermatologia/img5.jpg" alt="">
        <div class="checklist-casos">
           <div class="service">
          
@@ -56,7 +56,7 @@
          </div>
         </div>
          <div class="casos">
-       <img src="Imagen/img4.jpg" alt="">
+       <img src="assets/img/Dermatologia/img4.jpg" alt="">
      <div class="checklist-casos">
         <div class="service">
           <ul> <li><p><b>Cáncer cutáneo: </b>Dentro de la dermatología es muy importante el estudio de los 
@@ -71,7 +71,7 @@
           </div>
         </div>
            <div class="casos">
-            <img src="Imagen/img3.jpg" alt="">
+            <img src="assets/img/Dermatologia/img3.jpg" alt="">
        <div class="checklist-casos">
           <div class="service">
             <ul> <li><p><b> Dermatología Pediátrica:</b> la dermatología debe de tener en cuenta las diferentes etapas
@@ -91,21 +91,20 @@
      <section class="Imageness">
       <h2 id ="galeria">Galeria</h2>
        <div class="contenedor_galeria">
-     <!--a href = "https://saludlts.com/consultas-medicas/dermatologia-lts/"></a--> 
-        <img class="img-galeria" src="Imagen/img1.jpg" alt="" title="Hacer clic para hacer acercar">
-        <img class="img-galeria" src="Imagen/img2.jpg" alt="" title="Hacer clic para hacer acercar">
-        <img class="img-galeria" src="Imagen/img3.jpg" alt="" title="Hacer clic para hacer acercar">
-        <img class="img-galeria" src="Imagen/img4.jpg" alt="" title="Hacer clic para hacer acercar">
-        <img class="img-galeria" src="Imagen/img5.jpg" alt="" title="Hacer clic para hacer acercar">
-        <img class="img-galeria" src="Imagen/img6.jpg" alt="" title="Hacer clic para hacer acercar">
-        <img class="img-galeria" src="Imagen/img7.jpg" alt="" title="Hacer clic para hacer acercar">
-        <img class="img-galeria" src="Imagen/img8.jpg" alt="" title="Hacer clic para hacer acercar">
-        <img class="img-galeria" src="Imagen/img9.jpg" alt="" title="Hacer clic para hacer acercar">
+        <img class="img-galeria" src="assets/img/Dermatologia/img1.jpg" alt="" title="Hacer clic para hacer acercar">
+        <img class="img-galeria" src="assets/img/Dermatologia/img2.jpg" alt="" title="Hacer clic para hacer acercar">
+        <img class="img-galeria" src="assets/img/Dermatologia/img3.jpg" alt="" title="Hacer clic para hacer acercar">
+        <img class="img-galeria" src="assets/img/Dermatologia/img4.jpg" alt="" title="Hacer clic para hacer acercar">
+        <img class="img-galeria" src="assets/img/Dermatologia/img5.jpg" alt="" title="Hacer clic para hacer acercar">
+        <img class="img-galeria" src="assets/img/Dermatologia/img6.jpg" alt="" title="Hacer clic para hacer acercar">
+        <img class="img-galeria" src="assets/img/Dermatologia/img7.jpg" alt="" title="Hacer clic para hacer acercar">
+        <img class="img-galeria" src="assets/img/Dermatologia/img8.jpg" alt="" title="Hacer clic para hacer acercar">
+        <img class="img-galeria" src="assets/img/Dermatologia/img9.jpg" alt="" title="Hacer clic para hacer acercar">
       </div>
 
      </section>
      <div class="imagen-light">
-      <img src="Imagen/close.svg" alt="" class="close">
+      <img src="assets/img/Dermatologia/close.svg" alt="" class="close">
       <img src="#" alt="" class="agregar-imagen">
       </div>
      <section >
@@ -123,7 +122,7 @@
       <br>
      <div class = "especialistas">
 
-      <img class="esp" src="./Imagen/DrLeon.jpg" alt="doctor"> 
+      <img class="esp" src="assets/img/Dermatologia/DrLeon.jpg" alt="doctor"> 
       <div>
         <h3 class="form-title">Victor Leon Cherres</h3>
         <br>
@@ -131,7 +130,7 @@
         <br>
         <a href="https://doctopro.com/dr/drleon">Consultorio</a>
       </div>
-      <img class="espe" src="./Imagen/img1.png" alt="doctora">
+      <img class="espe" src="assets/img/Dermatologia/img1.png" alt="doctora">
       <div>
         <h3 class="form-title">Dra. Paola Wilches</h3>
         <br>
