@@ -11,7 +11,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <meta name="description" content="Ejemplo de HTML5">
     <meta name="Keywords" content="HTML5,CSS3,JavaScript">
     <link rel="stylesheet" href="assets/css/CirugiaGeneral.css"/>
-    <link rel="icon" href="../../assets/img/medical-icon.ico">
+    <link rel="icon" href="assets/img/medical-icon.ico">
 
     <script>
         function cambiarPestania(enlaceSeleccionado) {
@@ -40,15 +40,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             switch (id) {
                 case "uno":
 
-                    img.src = "img/ETAPA1.jpg";
+                    img.src = "assets/img/Cirugia/ETAPA1.jpg";
                     break;
                 case "dos":
 
-                    img.src = "img/ETAPA2.jpg";
+                    img.src = "assets/img/Cirugia/ETAPA2.jpg";
                     break;
                 default:
 
-                    img.src = "img/ETAPA3.jpg";
+                    img.src = "assets/img/Cirugia/ETAPA3.jpg";
                     break;
             }
 
@@ -67,7 +67,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
           <div class="Sprincipal">
             <h2 class="mensaje"><strong>Cirugía General</strong></h2>
-            <img class="imagenPrincipal" src="img/CENTRO.png" title="cirugia">
+            <img class="imagenPrincipal" src="assets/img/Cirugia/CENTRO.png" title="cirugia">
             <h3 class="mensaje"><a  href="../../index.php?c=cursos&f=nuevo">AGENDAR TU CITA</a></h3>
                    
 
@@ -102,7 +102,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
             <div class="elemento1">
 
-                <img class="imageno" src="img/segunda.jpg" alt="descripcion" height="250" width="350" />
+                <img class="imageno" src="assets/img/Cirugia/segunda.jpg" alt="descripcion" height="250" width="350" />
             </div>
 
             <div class="elemento1">
@@ -189,7 +189,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         </div>
         <div id="contenido">
 
-            <img id="imagen2" src="img/ETAPA1.jpg" alt="">
+            <img id="imagen2" src="assets/img/Cirugia/ETAPA1.jpg" alt="">
 
         </div>
     </div>

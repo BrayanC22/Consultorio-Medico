@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../assets/css/General.css">
+    <link rel="icon" href="assets/img/medical-icon.ico">
+    <script src="/assets/Validaciones/Cardiologia.js"></script>
     <title>ATENCIÓN AL USUARIO</title>
     <style>
         * {
@@ -67,6 +68,7 @@
             font-family: century school book;
             border-radius: 10px;
             border-color: #003752;
+            width: 100%;
         }
 
         h1 {
@@ -80,15 +82,20 @@
         }
 
         #Sub {
-            font-size: 1.5ch;
+            display: inline;
+            font-size: 1.2ch;
             font-weight: normal;
-            padding-bottom: 8%;
+            padding-bottom: 1%;
+            
         }
 
         #btnBuscar {
             width: 100%;
             font-weight: bold;
             color: #161e4a;
+        }
+        input[type="checkbox" i] {
+            width:fit-content;
         }
     </style>
 </head>
@@ -105,31 +112,32 @@
         </div>
         <div class="elemento">
             <h2>INGRESE LOS SIGUIENTES DATOS</h2>
-            <form id="formulario" action="../../index.php?c=Consulta&f=nuevo" method="POST">
+            <form id="formulario" action="../../index.php?c=Consulta&f=nuevo" method="POST" onsubmit="return validarC(event)">
                 <label>NOMBRE:</label>
-                <input type="text" name="txtnombre" placeholder="24BIT">
+                <div class="col-md-12"><input type="text" id="nombre" name="txtnombre" placeholder="ex, Yermin Lino"></div>
 
                 <label>EMAIL:</label>
-                <input type="email" name="txtemail" placeholder="alguien@something.com">
+                <div class="col-md-12"> <input type="email" id="correo" name="txtemail" placeholder="alguien@something.com">  </div>
 
                 <label>TELEFONO:</label>
-                <input type="tel" name="txtcelular" placeholder="9999999999">
+                <div class="col-md-12"><input type="tel" id="telefono" name="txtcelular" placeholder="9999999999">  </div>
 
                 <label>ASUNTO:</label>
-                <select name="asunto" id="asunto">
+                <div class="col-md-12"> <select name="asunto" id="asunto">
                     <option value="0">Seleccione una opción...</option>
                     <option value="Horarios de atención">Horarios de atención</option>
                     <option value="Incripciones para cursos">Incripciones para cursos</option>
                     <option value="Problemas con la plataforma">Problemas con la plataforma</option>
                     <option value="Métodos de pago">Métodos de pago</option>
                     <option value="Otros">Otros</option>
-                </select>
+                </select>  </div>
 
                 <label>DESCRIPCIÓN:</label>
-                <textarea rows="5" cols="60" name="txtDescripcion" placeholder="Comentanos tu inquietud."></textarea>
+                 <textarea rows="5" cols="60" id="txtArea" name="txtDescripcion" placeholder="Comentanos tu inquietud."></textarea> 
+               
                 <div id="Sub">
                     <label>¿DESEA RECIBIR PROMOCIONES A SU CORREO?</label>
-                    <input type="checkbox" name="subscripcion" value="true">
+                    <div class="col-md-12"> <input type="checkbox" id="check" name="subscripcion" value="true">  </div>
                 </div>
 
                 <div class="Acciones">
@@ -142,33 +150,6 @@
             </form>
         </div>
     </div>
-    
-    <?php
-    /*
-    if (!empty($_POST['txtnombre']) && !empty($_POST['txtemail']) && !empty($_POST['txtcelular'])  && !empty($_POST['txtDescripcion']) && $_POST['asunto'] != 0) {
-        $nombre = htmlentities($_POST['txtnombre']);
-        $email = isset($_POST['txtemail']) ? htmlentities($_POST['txtemail']) : '';
-        $celular = htmlentities($_POST['txtcelular']);
-        $asunto = htmlentities($_POST['asunto']);
-        $descripcion = htmlentities($_POST['txtDescripcion']);
-        $subscripcion = isset($_POST['subscripcion']) ? htmlentities($_POST['subscripcion']) : 'false';
-
-        $data = [
-            'nom' => $nombre,
-            'mail' => $email,
-            'cel' => $celular,
-            'asun' => $asunto,
-            'descrp' => $descripcion,
-            'subs' => $subscripcion
-        ];
-        $sql = "insert into consultas(id_consulta, NombreUsuario, email, celular, Asunto, Descripcion, Subscripcion) values(NULL, :nom, :mail,:cel,:asun,:descrp, :subs)";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute($data);
-        
-    }
-    */
-    ?>
-
 <?php  require_once 'vista/Templates/piePagina.php'; ?>
 
 </body>

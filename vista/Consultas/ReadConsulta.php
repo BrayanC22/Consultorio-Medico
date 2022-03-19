@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/medical-icon.ico">
     <link rel="stylesheet" href="../../../assets/css/General.css">
-    <title>READ CONSULTA</title>
+    <title>HISTORIAL DE CONSULTAS</title>
     <style>
         table {
             border: #b2b2b2 1px solid;
@@ -74,10 +75,11 @@
             color: black;
 
         }
+
         .buscarboton {
-            background: #24303c;
+            background: #004c70;
             padding: 10px;
-            border: none;
+            border-radius: 20px;
             margin: 16px 0;
             font-size: 16px;
             color: white;
@@ -93,7 +95,7 @@
 </head>
 
 <body>
-<?php  require_once 'vista/Templates/encabezado.php'; ?>
+    <?php require_once 'vista/Templates/encabezado.php'; ?>
 
 
     <?php
@@ -109,7 +111,7 @@
 
         <div class="col-md-12" id="BusquedaPanel">
             <form action="../../index.php?c=Consulta&f=buscar" method="POST">
-                <input type="text" name="busqueda" id="busqueda" class="formItem" placeholder="Ingrese el id de su consulta"/>
+                <input type="text" name="busqueda" id="busqueda" class="formItem" placeholder="Ingrese el id de su consulta" />
                 <button type="submit" class="buscarboton"><i class="fas fa-search"></i>Buscar por id</button><br>
             </form>
         </div>
@@ -158,7 +160,7 @@
         <br>
         <br>
 
-        <?php  require_once 'vista/Templates/piePagina.php'; ?>
+        <?php require_once 'vista/Templates/piePagina.php'; ?>
 
 </body>
 

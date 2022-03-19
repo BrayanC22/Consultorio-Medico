@@ -8,14 +8,14 @@
     <meta name="description" content="Ejemplo de HTML5">
     <meta name="Keywords" content="HTML5,CSS3,JavaScript">
     <link rel="stylesheet" href="assets/css/Nutricion.css"/>
-    <link rel="icon" href="../../assets/img/medical-icon.ico">
+    <link rel="icon" href="assets/img/medical-icon.ico">
 
     <script>
         var imagenes = new Array(
-            ['img/nutricionpagina1.jpg'],
-            ['img/nutricionpagina2.jpg'],
-            ['img/nutricionpagina3.jpg'],
-            ['img/nutricion2.jpg'],
+            ['assets/img/Nutricion/nutricionpagina1.jpg'],
+            ['assets/img/Nutricion/nutricionpagina2.jpg'],
+            ['assets/img/Nutricion/nutricionpagina3.jpg'],
+            ['assets/img/Nutricion/nutricion2.jpg'],
         );
         var contador = 0;
 
@@ -50,29 +50,29 @@
                 case "uno":
 
                     parrafo = "Si haces ejercicio por la mañana, levántate lo suficientemente temprano para terminar el desayuno al menos una hora antes de tu entrenamiento. Debes estar bien alimentado antes de empezar a entrena. Los estudios sugieren que ingerir carbohidratos en comidas o bebidas antes de hacer ejercicio puede mejorar el rendimiento del entrenamiento y podría permitirte entrenar durante más tiempo o a una intensidad mayor. Si no comes, es posible que te sientas perezoso o mareado al hacer ejercicio.";
-                    imge.src = "img/cereales1.jpg";
+                    imge.src = "assets/img/Nutricion/cereales1.jpg";
                     break;
                 case "dos":
 
                     parrafo = "Ten cuidado de no excederte cuando se trata de cuánto comes antes de hacer ejercicio. Comer demasiado antes de hacer ejercicio puede hacer que te sientas perezoso. Comer muy poco puede no darte la energía que necesitas para seguir sintiéndote fuerte durante tu entrenamiento.";
-                    imge.src = "img/segundopunto.jpg";
+                    imge.src = "assets/img/Nutricion/segundopunto.jpg";
                     break;
                 case "tres":
 
                     parrafo = "La mayoría de las personas pueden comer pequeñas colaciones justo antes y durante el ejercicio. La clave es cómo te sientes. Haz lo que funcione mejor para ti. Las colaciones que se comen poco antes de hacer ejercicio probablemente no te darán energía adicional si tu entrenamiento dura menos de 60 minutos, pero pueden prevenir los retortijones de hambre que distraen. Si tu entrenamiento es de más de 60 minutos, puedes beneficiarte al incluir un alimento o bebida rico en carbohidratos durante el entrenamiento.";
-                    imge.src = "img/tercerpunto.jpg";
+                    imge.src = "assets/img/Nutricion/tercerpunto.jpg";
                     break;
 
                 case "cuatro":
 
                     parrafo = "Para que los músculos se recuperen y reemplacen las reservas de glucógeno, ingiere alguna comida que contenga hidratos de carbono y proteínas en el plazo de las dos horas posteriores a la sesión de ejercicios, si es posible. ";
-                    imge.src = "img/comeejercicio.jpg";
+                    imge.src = "assets/img/Nutricion/comeejercicio.jpg";
                     break;
 
                 case "cinco":
 
                     parrafo = "No te olvides de tomar líquidos. Tú necesitas líquidos adecuados antes, durante y después del ejercicio para ayudar a prevenir la deshidratación.El agua es generalmente la mejor manera de reemplazar los líquidos perdidos. Pero si estás haciendo ejercicio durante más de 60 minutos, usa una bebida deportiva. Las bebidas deportivas pueden ayudar a mantener el equilibrio electrolítico del cuerpo y darte un poco más de energía porque contienen hidratos de carbono.";
-                    imge.src = "img/beber.jpg";
+                    imge.src = "assets/img/Nutricion/beber.jpg";
                     break;
             }
             pe.innerHTML = parrafo;
@@ -90,7 +90,7 @@
 
         <div class="Sprincipal">
             <h2 class="mensaje"><strong>NUTRICIÓN Y DIETETICA</strong></h2>
-            <img class="imagenPrincipal" src="img/pngwing.png" title="Nutricion">
+            <img class="imagenPrincipal" src="assets/img/Nutricion/pngwing.png" title="Nutricion">
             <h3 class="mensaje"><strong>CUIDA TU FIGURA TAN SOLO CON</strong><br><br><a
                     href="../../index.php?c=citas&f=index">AGENDAR TU CITA</a></h3>
 
@@ -121,7 +121,7 @@
             </div>
 
             <div class="artic1">
-                <img src="img/nutricion2.jpg" alt="" id="imagen" height="260" width="440" />
+                <img src="assets/img/Nutricion/nutricion2.jpg" alt="" id="imagen" height="260" width="440" />
             </div>
         </div>
         <br>
@@ -140,7 +140,7 @@
             <p id="parrafo"> Saber cuándo y qué comer puede marcar una diferencia en tus ejercicios. Comprende la
                 conexión entre la alimentación y el ejercicio. Te mostramos 5 consejos para maximizar tus ejercicios y
                 mantener tu figura con estas rutinas</p><br>
-            <img id="imagen1" src="img/TituloPrincipal.jpg" alt="">
+            <img id="imagen1" src="assets/img/Nutricion/TituloPrincipal.jpg" alt="">
         </div>
 
         <hr>
