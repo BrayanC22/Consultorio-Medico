@@ -5,10 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Consultorio Médico">
-        <link rel="icon" href="assets/img/medical-icon.ico">
+        <link rel="icon" href="../../assets/img/medical-icon.ico">
         <meta name="Keywords" content="Consultorio, Medicina">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="assets/css/General.css"/>
+        <link rel="stylesheet" href="../../assets/css/General.css"/>
         
         
 <style>
@@ -155,19 +155,7 @@ text-align: center;
 </head>
 
 <body>
-    <header class = "Encabezado">
-        <h1 class="Contenido" style="font-weight: bold; margin-bottom: 0rem;"> <img src="assets/img/Logo.png" alt="" />CONSULTORIO MEDICO</h1>
-        <nav class = "Contenido">  
-          <ul class = "menu" style="padding-left: 0%; margin-bottom: 0rem;"> 
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Especialidades/Quisnancela_Cirugia/QuisnancelaCirugia.html">Cirugía General</a></li>
-                    <li><a href="Especialidades/Calvopina_Nutricion/BrayanNutricion.html">Nutrición y Dietética</a></li>
-                    <li><a href="Especialidades/Campoverde_Dermatologia/CampoverdeDermatologia.html">Dermatología</a></li>
-                    <li><a href="Especialidades/Lino_Cardiologia/LinoCardiologia.html">Cardiología</a></li>
-                    <li><a href="acercaNosotros.html">Acerca de</a></li>
-                </ul>
-            </nav>
-        </header>
+<?php  require_once 'vista/Templates/encabezado.php'; ?>
     
 
     <div id="ContenedorPrincipal">
@@ -181,7 +169,7 @@ text-align: center;
 
 
         <div class="row">
-            <img class="elemento col-md-12" src="assets/img/doctores.png" alt="imagen">
+            <img class="elemento col-md-12" src="../../assets/img/doctores.png" alt="imagen">
             <div class="elemento col-md-12">
                 <p> Atención Médica Experta, Tratamientos Innovadores, Innovación Médica, Programación de Citas. <br>
                     Somos una empresa dedicada a la prestación de servicios médicos integrales; la cual asume el compromiso
@@ -197,19 +185,19 @@ text-align: center;
                 <h2>NUESTROS SERVICIOS</h2>
             </div>
             <div class="elemento col-md-6">
-                    <a href="Especialidades/Quisnancela_Cirugia/QuisnancelaCirugia.html" target="_BLANK"><h5>CIRUGÍA GENERAL</h5><img id="imagen1" onmouseover="aumentarImagen('imagen1')" onmouseleave="reducirImagen('imagen1')" height="300" width="600" src="assets/img/cirugiaGeneral.jpg" alt=""/></a>            
+                    <a href="Especialidades/Quisnancela_Cirugia/QuisnancelaCirugia.php" target="_BLANK"><h5>CIRUGÍA GENERAL</h5><img id="imagen1" onmouseover="aumentarImagen('imagen1')" onmouseleave="reducirImagen('imagen1')" height="300" width="600" src="../../assets/img/cirugiaGeneral.jpg" alt=""/></a>            
             </div>
             <div class="elemento col-md-6">   
-                    <a href="Especialidades/Calvopina_Nutricion/BrayanNutricion.html" target="_BLANK"><h5>NUTRICIÓN Y DIETETICA</h5><img id="imagen2" onmouseover="aumentarImagen('imagen2')" onmouseleave="reducirImagen('imagen2')" height="300" width="600" src="assets/img/nutrición.jpg" alt="" /></a>
+                    <a href="Especialidades/Calvopina_Nutricion/BrayanNutricion.php" target="_BLANK"><h5>NUTRICIÓN Y DIETETICA</h5><img id="imagen2" onmouseover="aumentarImagen('imagen2')" onmouseleave="reducirImagen('imagen2')" height="300" width="600" src="../../assets/img/nutrición.jpg" alt="" /></a>
                     
                 
             </div>
             <div class="elemento col-md-6">
-                    <a href="Especialidades/Campoverde_Dermatologia/CampoverdeDermatologia.html" target="_BLANK"><h5>DERMATOLOGÍA</h5><img id="imagen3" onmouseover="aumentarImagen('imagen3')" onmouseleave="reducirImagen('imagen3')" height="300" width="600" src="assets/img/dermatología.jpg" alt=""/></a>
+                    <a href="Especialidades/Campoverde_Dermatologia/CampoverdeDermatologia.php" target="_BLANK"><h5>DERMATOLOGÍA</h5><img id="imagen3" onmouseover="aumentarImagen('imagen3')" onmouseleave="reducirImagen('imagen3')" height="300" width="600" src="../../assets/img/dermatología.jpg" alt=""/></a>
                 
             </div>
             <div class="elemento col-md-6">
-                    <a href="Especialidades/Lino_Cardiologia/LinoCardiologia.html" target="_BLANK"><h5>CARDIOLOGÍA</h5><img id="imagen4" height="300" onmouseover="aumentarImagen('imagen4')" onmouseleave="reducirImagen('imagen4')" width="600" src="assets/img/Cardiología.jpg" alt="" /></a>
+                    <a href="Especialidades/Lino_Cardiologia/LinoCardiologia.php" target="_BLANK"><h5>CARDIOLOGÍA</h5><img id="imagen4" height="300" onmouseover="aumentarImagen('imagen4')" onmouseleave="reducirImagen('imagen4')" width="600" src="../../assets/img/Cardiología.jpg" alt="" /></a>
             </div>
         </div>
     </div>
@@ -218,34 +206,7 @@ text-align: center;
 
 
 
-<footer id="Footer1">
-    <strong>Autor:</strong> Grupo 6.
-    <br>
-    <strong>Visitanos:</strong> Guayaquil-Ecuador.
-    <br>
-    <br>
-    <strong>Consultorio Médico</strong>
-    <br>
-    <br>
-
-    <div id="Foot">
-
-        <div>
-            <h4 id="acercaDe"><strong>Contactanos a nuestras Redes sociales</strong></h4>
-        </div>
-        <br>
-        <a href="https://twitter.com/?lang=es" target="_BLANK"> <img src="assets/img/twitter.png" alt="descripcion"
-                height="50" width="50" /></a>
-        <a href="https://www.instagram.com/accounts/login/" target="_BLANK"> <img src="assets/img/instagram.png"
-                alt="descripcion" height="50" width="50" /></a>
-        <a href="https://www.facebook.com/" target="_BLANK"> <img src="assets/img/facebook.png" alt="descripcion"
-                 width="50%" /></a>
-        <br>
-
-        <h4> Derechos reservados &copy; 2021-2022</h4>
-    </div>
-
-</footer>
+<?php  require_once 'vista/Templates/piePagina.php'; ?>
 
 </body>
 

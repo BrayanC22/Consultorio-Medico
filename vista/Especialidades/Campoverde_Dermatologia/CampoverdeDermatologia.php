@@ -4,27 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/css/General.css">
-    <link rel="stylesheet" href="css/CampoverdeSergio.css">
+    <link rel="stylesheet" href="assets/css/CampoverdeSergio.css">
     <link rel="icon" href="../../assets/img/medical-icon.ico">
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <title>DERMATOLOGÍA</title>
 </head>
 <body>
   
-    <header class = "Encabezado">
-      <h1 class="Contenido"> <img id="imagenP" src="../../assets/img/Logo.png" alt="" />CONSULTORIO MEDICO</h1>
-      <nav class = "Contenido">  
-        <ul class = "menu">  
-                  <li><a href="../../index.html">Home</a></li>
-                  <li><a href="../Quisnancela_Cirugia/QuisnancelaCirugia.html">Cirugía general</a></li>
-                  <li><a href="../Calvopina_Nutricion/BrayanNutricion.html">Nutricion y Dietetica</a></li>
-                  <li><a href="CampoverdeDermatologia.html">Dermatología</a></li>
-                  <li><a href="../Lino_Cardiologia/LinoCardiologia.html">Cardiólogia</a></li>
-                  <li><a href="../../acercaNosotros.html">Acerca de</a></li>
-                </ul>
-         </nav> 
-          </header>
+<?php  require_once 'vista/Templates/encabezado.php'; ?>
     
          <div class ="body"></div>
         <img class="dermatologia" src="Imagen/hamburguesa.svg" alt="">
@@ -159,34 +146,7 @@
   </div>
     </main> 
 
-    <footer id="Footer1">
-      <strong>Autor:</strong> Grupo 6.
-      <br>
-      <strong>Visitanos:</strong> Guayaquil-Ecuador.
-      <br>
-      <br>
-      <strong>Medicina General</strong>
-      <br>
-      <br>
-
-      <div id="Foot">
-
-          <div>
-              <h4 id="acercaDe"><strong>Contactanos a nuestras Redes sociales</strong></h4>
-          </div>
-          <br>
-          <a href="https://twitter.com/?lang=es" target="_BLANK"> <img src="../../assets/img/twitter.png" alt="descripcion"
-                  height="50" width="50" /></a>
-          <a href="https://www.instagram.com/accounts/login/" target="_BLANK"> <img src="../../assets/img/instagram.png"
-                  alt="descripcion" height="50" width="50" /></a>
-          <a href="https://www.facebook.com/" target="_BLANK"> <img src="../../assets/img/facebook.png" alt="descripcion"
-                  height="50" width="50" /></a>
-          <br>
-
-          <h4> Derechos reservados &copy; 2020-2021</h4>
-      </div>
-
-  </footer>
+    <?php  require_once 'vista/Templates/piePagina.php'; ?>
     <!---->
     <script>
      const dermatologia = document.querySelector('.dermatologia')

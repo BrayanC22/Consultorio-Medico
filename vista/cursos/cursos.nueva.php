@@ -260,7 +260,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <div class="elemento">
                 <div class="formularios">
 
-                    <form id="formContacto" action="../../index.php?=cursos&f=nuevo" onsubmit="return validar()" method="POST">
+                    <form id="formContacto" action="index.php?c=cursos&f=nuevo" onsubmit="return validar()" method="POST">
                         <div class="row">
                             <h2 class="text-center">Datos del Curso</h2>
                             <div class="col-md-12">
@@ -312,7 +312,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             </div>
                            
                 <div>
-                  <a href="../../index.php?c=cursos&f=index">
+                  <a href="index.php?c=cursos&f=index">
                     <button type="button" class="btn btn-primary" id="butonbuscar"><i class="fas fa-plus"></i>Consultar cursos </button>
                   </a>
 

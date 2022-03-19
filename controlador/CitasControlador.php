@@ -25,10 +25,12 @@ class CitasControlador {
     public function buscar() {
         // leer parametros
         $busqueda = $_POST['busqueda'];
-    
+        if (empty($_POST['busqueda'])){
         //comunica con el modelo
+        $resultados = $this->cita->listar();
+    }else{
         $resultados = $this->cita->buscar($busqueda);
-    
+    }
         // comunicarnos a la vista
         require_once 'vista/citas/citas.list.php';
     

@@ -248,7 +248,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <h1 class="Contenido"> <img src="../../assets/img/Logo.png" alt="" />CONSULTORIO MEDICO</h1>
             <nav class="Contenido">
                 <ul class="menu">
-                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../Especialidades/index.html">Home</a></li>
                     <li><a href="../../Especialidades/Quisnancela_Cirugia/QuisnancelaCirugia.html">Cirugía General</a></li>
                     <li><a href="../../Especialidades/Calvopina_Nutricion/BrayanNutricion.html">Nutrición y Dietética</a></li>
                     <li><a href="../../Especialidades/Campoverde_Dermatologia/CampoverdeDermatologia.html">Dermatología</a></li>
@@ -317,7 +317,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         <br>
                         <div class="col-md-12">
                     <button type="submit" class="btn btn-primary" onclick="if (!confirm('Esta seguro de modificar el curso')) return false;" >Guardar</button>
-                    <a href="../../index.php?c=cursos&f=index" class="btnconsultar">Consultar cursos</a>
+                    <a href="../../index.php?c=cursos&f=nuevo" class="btnconsultar">Consultar cursos</a>
                 </div>
             
                 </div>
