@@ -7,34 +7,58 @@
     <meta name="description" content="Información de cardiología">
     <meta name="autor" content="Yermin Lino">
     <meta name="Keywords" content="Cardiología, Enfermedad del corazón">
-    <link rel="stylesheet" href="css/Cardiologia.css">
-    <link rel="stylesheet" href="../../assets/css/General.css"/>
+    <link rel="stylesheet" href="assets/css/Cardiologia.css">
     <script src="js/CardiologiaProcesos.js"></script>
-    <link rel="icon" href="../../assets/img/medical-icon.ico">
+    <link rel="icon" href="assets/img/medical-icon.ico">
 </head>
+<script>
+    var Nimagenes = new Array(
+    ['assets/img/Cardiologia/Rotacion/img1.png'],
+    ['assets/img/Cardiologia/Rotacion/img2.png'],
+    ['assets/img/Cardiologia/Rotacion/img3.png']);
+var contador = 0;
+
+function rotarImagenes() {
+    contador++
+    document.getElementById("imagenPrincipal").src = Nimagenes[contador % Nimagenes.length][0];
+}
+
+
+/* Alternar colores de "a" agendar cita*/
+
+var Colores = new Array(
+    ['#3e73b6'],
+    ['#0f7986'],
+    ['#00b1ff']);
+var ColoresLetra = new Array(
+    ['#ffffff'],
+    ['#ffffff'],
+    ['#0b080e']);
+var contadorColores = 0;
+
+function AlternarColores() {
+    contadorColores++
+    document.getElementById("Agendar").style.background = Colores[contadorColores % Colores.length][0];
+    document.getElementById("Agendar").style.color = ColoresLetra[contadorColores % ColoresLetra.length][0];
+}
+
+onload = function () {
+    rotarImagenes();
+    setInterval(rotarImagenes, 2000);
+    AlternarColores();
+    setInterval(AlternarColores, 2000);
+}
+
+</script>
 
 <body>
-
-
-    <header class = "Encabezado">
-        <h1 class="Contenido"> <img src="../../assets/img/Logo.png" alt="" />CONSULTORIO MEDICO</h1>
-        <nav class = "Contenido">  
-          <ul class = "menu">  
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../Quisnancela_Cirugia/QuisnancelaCirugia.html">Cirugía General</a></li>
-                <li><a href="../Calvopina_Nutricion/BrayanNutricion.html">Nutrición y Dietética</a></li>
-                <li><a href="../Campoverde_Dermatologia/CampoverdeDermatologia.html">Dermatología</a></li>
-                <li><a href="LinoCardiologia.html">Cardiología</a></li>
-                <li><a href="../../acercaNosotros.html">Acerca de</a></li>
-            </ul> 
-     </nav> 
-    </header>
+<?php  require_once 'vista/Templates/encabezado.php'; ?>
 
         
             <div class = "Sprincipal">
                     <h2 class="mensaje"><strong>CARDIOLOGÍA</strong></h2>
-                    <img id="imagenPrincipal" src="img/Rotacion/img1.png" alt="Imagen Principal" title="Cardiología">
-                    <h2 class="mensaje"><strong>CON NOSOTROS TU CORAZÓN ESTÁ SEGURO</strong><a id="Agendar" href="formularioAgendar.html" target="_BLANK">AGENDAR CITA</a></h2>     
+                    <img id="imagenPrincipal" src="assets/img/Cardiologia/Rotacion/img1.png" alt="Imagen Principal" title="Cardiología">
+                    <h2 class="mensaje"><strong>CON NOSOTROS TU CORAZÓN ESTÁ SEGURO</strong><a id="Agendar" href="../../index.php?c=Consulta&f=nuevo">AGENDAR CITA</a></h2>     
             </div>
 
             <div>
@@ -57,14 +81,14 @@
                     exploración por tomografía computarizada e imágenes por resonancia magnética
                 </p>
             </div>
-            <img class="imagen" src="img/Cardiologia1.png" alt="">
+            <img class="imagen" src="assets/img/Cardiologia/Cardiologia1.png" alt="">
         </div>
 
 
         <div class="Seccion" style="background: #004c70; color: white;">
             <h2 class="titulo2">TRATAMIENTOS</h2>
             <img class="imagen"
-                src="img/cardiologia2.jpg"
+                src="assets/img/Cardiologia/cardiologia2.jpg"
                 alt="">
             <div class="parrafo">
                 <ul>
@@ -87,7 +111,7 @@
 
             <div class="infoDoctores">
                 <div class="doctores">
-                    <img src="img/dr1.jpeg" alt="Isabel Ruilova" title="Isabel Ruilova">
+                    <img src="assets/img/Cardiologia/dr1.jpeg" alt="Isabel Ruilova" title="Isabel Ruilova">
                 </div>
                 <div class="doctores">
                     <h3>Isabel Ruilova</h3>
@@ -103,7 +127,7 @@
 
             <div class="infoDoctores">
                 <div class="doctores">
-                    <img src="img/dr2.jpeg" alt="David Puga" title="David Puga">
+                    <img src="assets/img/Cardiologia/dr2.jpeg" alt="David Puga" title="David Puga">
                 </div>
                 <div class="doctores">
                     <h3>David Puga</h3>
@@ -119,7 +143,7 @@
 
             <div class="infoDoctores">
                 <div class="doctores">
-                    <img src="img/dr3.jpeg" alt="Jazmin Benavides" title="Jazmin Benavides">
+                    <img src="assets/img/Cardiologia/dr3.jpeg" alt="Jazmin Benavides" title="Jazmin Benavides">
                 </div>
                 <div class="doctores">
                     <h3>Jazmin Benavides</h3>
@@ -151,34 +175,7 @@
 </div>
 
 
-<footer id="Footer1">
-    <strong>Autor:</strong> Grupo 6.
-    <br>
-    <strong>Visitanos:</strong> Guayaquil-Ecuador.
-    <br>
-    <br>
-    <strong>Medicina General</strong>
-    <br>
-    <br>
-
-    <div id="Foot">
-
-        <div>
-            <h4 id="acercaDe"><strong>Contactanos a nuestras Redes sociales</strong></h4>
-        </div>
-        <br>
-        <a href="https://twitter.com/?lang=es" target="_BLANK"> <img src="../../assets/img/twitter.png" alt="descripcion"
-                height="50" width="50" /></a>
-        <a href="https://www.instagram.com/accounts/login/" target="_BLANK"> <img src="../../assets/img/instagram.png"
-                alt="descripcion" height="50" width="50" /></a>
-        <a href="https://www.facebook.com/" target="_BLANK"> <img src="../../assets/img/facebook.png" alt="descripcion"
-                height="50" width="50" /></a>
-        <br>
-
-        <h4> Derechos reservados &copy; 2020-2021</h4>
-    </div>
-
-</footer>
+<?php  require_once 'vista/Templates/piePagina.php'; ?>
     
 </body>
 

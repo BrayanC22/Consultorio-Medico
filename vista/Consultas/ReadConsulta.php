@@ -16,7 +16,8 @@
         th {
             border: #b2b2b2 1px solid;
         }
-        th{
+
+        th {
             background: #004C70;
             color: white;
         }
@@ -27,7 +28,8 @@
             flex-direction: column;
             align-content: center;
         }
-        td a{
+
+        td a {
             background: #004C70;
             padding-inline: 4%;
             color: white;
@@ -35,15 +37,17 @@
             text-align: center;
             border-radius: 5px;
         }
-        td a:nth-child(2){
+
+        td a:nth-child(2) {
             color: #004C70;
             background: white;
             border: solid 1px #004C70;
 
-            
+
 
         }
-        #nuevaC{
+
+        #nuevaC {
             background: #004C70;
             padding: 1%;
             color: white;
@@ -53,41 +57,62 @@
             margin-inline: 35%;
             border-radius: 15px;
         }
-        h2{
+
+        h2 {
             text-align: center;
             padding-top: 2%;
+        }
+
+        .formItem {
+            background: white;
+            padding: 8px;
+            border-radius: 2px;
+            margin-bottom: 16px;
+            border: 1px solid black;
+            font-family: Century Schoolbook;
+            font-size: 18px;
+            color: black;
+
+        }
+        .buscarboton {
+            background: #24303c;
+            padding: 10px;
+            border: none;
+            margin: 16px 0;
+            font-size: 16px;
+            color: white;
+
+        }
+
+        #BusquedaPanel {
+            text-align: center;
+            position: relative;
+            right: 4%;
         }
     </style>
 </head>
 
 <body>
-    <div class="Encabezado">
-        <h1 class="Contenido"> <img src="../../../assets/img/Logo.png" alt="" />CONSULTORIO MEDICO</h1>
-        <nav class="Contenido">
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Cirugía General</a></li>
-                <li><a href="#">Nutrición y Dietética</a></li>
-                <li><a href="#">Dermatología</a></li>
-                <li><a href="#">Cardiología</a></li>
-                <li><a href="#">Acerca de</a></li>
-            </ul>
-        </nav>
-    </div>
+<?php  require_once 'vista/Templates/encabezado.php'; ?>
 
 
     <?php
-
-    require_once '../../../Conexion.php';
-
-
+    /*
     $sql = "select * from Consultas";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
+    */
     ?>
     <h2>LISTA DE CONSULTAS REALIZADAS POR LOS USUARIOS</h2>
     <br>
     <div id="Datos">
+
+        <div class="col-md-12" id="BusquedaPanel">
+            <form action="../../index.php?c=Consulta&f=buscar" method="POST">
+                <input type="text" name="busqueda" id="busqueda" class="formItem" placeholder="Ingrese el id de su consulta"/>
+                <button type="submit" class="buscarboton"><i class="fas fa-search"></i>Buscar por id</button><br>
+            </form>
+        </div>
 
         <table>
             <thead>
@@ -103,8 +128,7 @@
             </thead>
             <tbody>
                 <?php
-                $filas = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                foreach ($filas as $fila) {
+                foreach ($resultados as $fila) {
                 ?>
                     <tr>
                         <td><?php echo $fila['id_consulta'] ?></td>
@@ -115,14 +139,14 @@
                         <td><?php echo $fila['Descripcion'] ?></td>
                         <td><?php echo $fila['Subscripcion'] ?></td>
                         <td>
-                            <a href="UpdateConsulta.php?id=<?php echo $fila['id_consulta'] ?>">Editar</a>
-                            <a href="DeleteConsulta.php?id=<?php echo $fila['id_consulta'] ?>">Eliminar</a>
+                            <a href="../../index.php?c=Consulta&f=editar&id_consulta=<?php echo  $fila['id_consulta']; ?>">Editar</a>
+                            <a onclick="if(!confirm('Esta seguro de eliminar la consulta?'))return false;" href="../../index.php?c=Consulta&f=eliminar&id_consulta=<?php echo  $fila['id_consulta']; ?>">Eliminar</a>
                         </td>
                     </tr>
                 <?php } ?>
             </tbody>
         </table>
-        <a id="nuevaC" href="CreateConsulta.php">AGREGAR UNA NUEVA CONSULTA</a>
+        <a id="nuevaC" href="../../index.php?c=Consulta&f=nuevo">AGREGAR UNA NUEVA CONSULTA</a>
     </div>
     <footer id="Footer1">
         <strong>Autor:</strong> Grupo 6.
@@ -134,21 +158,7 @@
         <br>
         <br>
 
-        <div id="Foot">
-
-            <div>
-                <h4 id="acercaDe"><strong>Contactanos a nuestras Redes sociales</strong></h4>
-            </div>
-            <br>
-            <a href="https://twitter.com/?lang=es" target="_BLANK"> <img src="../../../assets/img/twitter.png" alt="descripcion" height="50" width="50" /></a>
-            <a href="https://www.instagram.com/accounts/login/" target="_BLANK"> <img src="../../../assets/img/instagram.png" alt="descripcion" height="50" width="50" /></a>
-            <a href="https://www.facebook.com/" target="_BLANK"> <img src="../../../assets/img/facebook.png" alt="descripcion" height="50" width="50" /></a>
-            <br>
-
-            <h4> Derechos reservados &copy; 2022-2023</h4>
-        </div>
-
-    </footer>
+        <?php  require_once 'vista/Templates/piePagina.php'; ?>
 
 </body>
 

@@ -25,10 +25,13 @@ class CursosControlador {
     public function buscar() {
         // leer parametros
         $busqueda = $_POST['busqueda'];
-    
+        if (empty($_POST['busqueda'])){
         //comunica con el modelo
-        $resultados = $this->curso->buscar($busqueda);
-    
+        $resultados = $this->curso->listar();
+        }else{
+            
+            $resultados = $this->curso->buscar($busqueda);
+        }
         // comunicarnos a la vista
         require_once 'vista/cursos/cursos.list.php';
       //  echo json_encode($resultados);

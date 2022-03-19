@@ -182,7 +182,7 @@
 
         <div class="formularios">
 
-          <form id="formContacto" action="../../index.php?=citas&f=nuevo" onsubmit="return validarFormulario()" method="POST">
+          <form id="formContacto" action="../../index.php?c=citas&f=nuevo" onsubmit="return validarFormulario()" method="POST">
 
             <div class="row">
               <h4>AGENDA TU CITA</h4>

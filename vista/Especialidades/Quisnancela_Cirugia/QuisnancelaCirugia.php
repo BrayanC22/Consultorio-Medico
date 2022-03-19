@@ -10,8 +10,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <meta charset="UTF-8">
     <meta name="description" content="Ejemplo de HTML5">
     <meta name="Keywords" content="HTML5,CSS3,JavaScript">
-    <link rel="stylesheet" href="CirugiaGeneral.css"/>
-    <link rel="stylesheet" href="../../assets/css/General.css"/>
+    <link rel="stylesheet" href="assets/css/CirugiaGeneral.css"/>
     <link rel="icon" href="../../assets/img/medical-icon.ico">
 
     <script>
@@ -64,25 +63,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 <body>
 
     <div id="contendor1">
-        <header class = "Encabezado">
-            <h1 class="Contenido"> <img src="../../assets/img/Logo.png" alt="" />CONSULTORIO MEDICO</h1>
-            <nav class = "Contenido">  
-              <ul class = "menu">
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="QuisnancelaCirugia.html">Cirugía General</a></li>
-                    <li><a href="../Calvopina_Nutricion/BrayanNutricion.html">Nutrición y Dietética</a></li>
-                    <li><a href="../Campoverde_Dermatologia/CampoverdeDermatologia.html">Dermatología</a></li>
-                    <li><a href="../Lino_Cardiologia/LinoCardiologia.html">Cardiología</a></li>
-                    <li><a href="../../acercaNosotros.html">Acerca de</a></li>
-                    
-                </ul>
-            </nav>
-        </header>
+    <?php  require_once 'vista/Templates/encabezado.php'; ?>
 
           <div class="Sprincipal">
             <h2 class="mensaje"><strong>Cirugía General</strong></h2>
             <img class="imagenPrincipal" src="img/CENTRO.png" title="cirugia">
-            <h3 class="mensaje"><a  href="../../vista/cursos/cursos.nueva.php">AGENDAR TU CITA</a></h3>
+            <h3 class="mensaje"><a  href="../../index.php?c=cursos&f=nuevo">AGENDAR TU CITA</a></h3>
                    
 
         </div>
@@ -208,34 +194,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         </div>
     </div>
 
-    <footer id="Footer1">
-        <strong>Autor:</strong> Grupo 6.
-        <br>
-        <strong>Visitanos:</strong> Guayaquil-Ecuador.
-        <br>
-        <br>
-        <strong>Medicina General</strong>
-        <br>
-        <br>
-
-        <div id="Foot">
-
-            <div>
-                <h4 id="acercaDe"><strong>Contactanos a nuestras Redes sociales</strong></h4>
-            </div>
-            <br>
-            <a href="https://twitter.com/?lang=es" target="_BLANK"> <img src="../../assets/img/twitter.png" alt="descripcion"
-                    height="50" width="50" /></a>
-            <a href="https://www.instagram.com/accounts/login/" target="_BLANK"> <img src="../../assets/img/instagram.png"
-                    alt="descripcion" height="50" width="50" /></a>
-            <a href="https://www.facebook.com/" target="_BLANK"> <img src="../../assets/img/facebook.png" alt="descripcion"
-                    height="50" width="50" /></a>
-            <br>
-
-            <h4> Derechos reservados &copy; 2020-2021</h4>
-        </div>
-
-    </footer>
+    <<?php  require_once 'vista/Templates/piePagina.php'; ?>
 </body>
 
 

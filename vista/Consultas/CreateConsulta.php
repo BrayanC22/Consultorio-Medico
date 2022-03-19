@@ -94,19 +94,7 @@
 </head>
 
 <body>
-    <div class="Encabezado">
-        <h1 class="Contenido"> <img src="../../../assets/img/Logo.png" alt="" />CONSULTORIO MEDICO</h1>
-        <nav class="Contenido">
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Cirugía General</a></li>
-                <li><a href="#">Nutrición y Dietética</a></li>
-                <li><a href="#">Dermatología</a></li>
-                <li><a href="#">Cardiología</a></li>
-                <li><a href="#">Acerca de</a></li>
-            </ul>
-        </nav>
-    </div>
+<?php  require_once 'vista/Templates/encabezado.php'; ?>
     <div>
         <h1>CUENTÁNOS TUS INQUIETUDES, ESTAMOS PARA RESOLVER TUS DUDAS</h1>
     </div>
@@ -117,7 +105,7 @@
         </div>
         <div class="elemento">
             <h2>INGRESE LOS SIGUIENTES DATOS</h2>
-            <form id="formulario" method="POST">
+            <form id="formulario" action="../../index.php?c=Consulta&f=nuevo" method="POST">
                 <label>NOMBRE:</label>
                 <input type="text" name="txtnombre" placeholder="24BIT">
 
@@ -149,14 +137,14 @@
                     <input type="reset" value="CANCELAR">
                 </div>
                 <div>
-                    <input type="button" onclick="location.href='ReadConsulta.php'" id="btnBuscar" value="VISUALIZAR CONSULTAS" />
+                    <input type="button" onclick="location.href='../../index.php?c=Consulta&f=index'" id="btnBuscar" value="VISUALIZAR CONSULTAS" />
                 </div>
             </form>
         </div>
     </div>
+    
     <?php
-    require_once '../../../Conexion.php';
-
+    /*
     if (!empty($_POST['txtnombre']) && !empty($_POST['txtemail']) && !empty($_POST['txtcelular'])  && !empty($_POST['txtDescripcion']) && $_POST['asunto'] != 0) {
         $nombre = htmlentities($_POST['txtnombre']);
         $email = isset($_POST['txtemail']) ? htmlentities($_POST['txtemail']) : '';
@@ -178,33 +166,10 @@
         $stmt->execute($data);
         
     }
+    */
     ?>
 
-    <footer id="Footer1">
-        <strong>Autor:</strong> Grupo 6.
-        <br>
-        <strong>Visitanos:</strong> Guayaquil-Ecuador.
-        <br>
-        <br>
-        <strong>Consultorio Médico</strong>
-        <br>
-        <br>
-
-        <div id="Foot">
-
-            <div>
-                <h4 id="acercaDe"><strong>Contactanos a nuestras Redes sociales</strong></h4>
-            </div>
-            <br>
-            <a href="https://twitter.com/?lang=es" target="_BLANK"> <img src="../../../assets/img/twitter.png" alt="descripcion" height="50" width="50" /></a>
-            <a href="https://www.instagram.com/accounts/login/" target="_BLANK"> <img src="../../../assets/img/instagram.png" alt="descripcion" height="50" width="50" /></a>
-            <a href="https://www.facebook.com/" target="_BLANK"> <img src="../../../assets/img/facebook.png" alt="descripcion" height="50" width="50" /></a>
-            <br>
-
-            <h4> Derechos reservados &copy; 2022-2023</h4>
-        </div>
-
-    </footer>
+<?php  require_once 'vista/Templates/piePagina.php'; ?>
 
 </body>
 
